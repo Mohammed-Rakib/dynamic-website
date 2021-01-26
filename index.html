@@ -15,7 +15,7 @@
         <h1 class="text-center heading p-3">Welcome To Paioneer Bank</h1>
     <div class="container shadow p-5 border-radius">
         <h3 class="">Log in</h3>
-        <form>
+       <div class="form-area">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -27,19 +27,59 @@
             </div>
 
             <button  class="btn btn-primary" id="login-btn">Submit</button>
-        </form>
+        </div>
     </div>
+    </div>
+
+    <!-- login area ends here -->
+    
+    <div id="transaction-area">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4">
+                 <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                 </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$00</h2>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$1200</h2>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+           <div class="col-md-6 ">
+               <div class="submit-area">
+                <h2>Deposit</h2>
+                <br>
+                <input type="text" placeholder="$ amount you want to deposit" class="form-control">
+                <br>
+                <button class="btn btn-success">Deposit</button>
+               </div>
+           </div>
+           <div class="col-md-6 ">
+             <div class="submit-area">
+                <h2>Withdraw</h2>
+                <br>
+                <input type="text" placeholder="$ amount you want to withdraw" class="form-control">
+                <br>
+                <button class="btn btn-success">Withdraw</button>
+             </div>
+           </div>
+        </div>
+       </div>
     </div>
     </main>
 
 
-
-    <script >
-         const loginBtn = document.getElementById("login-btn");
-         loginBtn.addEventListener("click", function(){
-        const loginArea = document.getElementById("login-page");
-        loginArea.style.display="none";
-    });
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
